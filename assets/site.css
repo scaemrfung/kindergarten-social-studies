@@ -116,3 +116,10 @@ footer.site{margin-top:48px;font-size:.8rem;color:var(--muted);border-top:1px so
   .print-only{display:block}
   .bb{background:#fff;color:#000;padding:0} .bb-stage{background:#fff;min-height:0}
 }
+.btn.chalkie{background:var(--coral-ink);border-color:var(--coral-ink);color:#fff}
+.btn.chalkie:hover{background:#8c3322;color:#fff}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.unit-card li{display:flex;align-items:center}
+.unit-card li>a:first-child{flex:1;min-width:0}
+.slides-link{font-size:.78rem;font-weight:600;color:var(--coral-ink);text-decoration:none;padding:4px 12px 4px 0;white-space:nowrap}
+.slides-link:hover{text-decoration:underline}

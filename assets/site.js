@@ -43,6 +43,7 @@
     now.querySelector("[data-now-unit]").textContent=L.unit;
     now.querySelector("[data-now-focus]").textContent=L.focus;
     now.querySelector("[data-now-dates]").textContent=(st.cycle?st.cycle.range:"")+(st.message?" · "+st.message:"");
+    var ck=now.querySelector("[data-now-chalkie]");if(ck&&L.chalkie)ck.href=L.chalkie;
     now.querySelectorAll("[data-now-link]").forEach(function(a){a.href=BASE+"/week/"+L.n+"/"+(a.getAttribute("data-now-link")||"")});
   }
   // block timer
