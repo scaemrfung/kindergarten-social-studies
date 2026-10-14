@@ -5,7 +5,7 @@
   function save(s){try{localStorage.setItem(KEY,JSON.stringify(s))}catch(e){}}
   window.KSS={stamps:stamps};
   document.addEventListener("click",function(e){
-    var m=e.target.closest(".menu-btn");if(m){document.body.classList.toggle("menu-open");m.setAttribute("aria-expanded",document.body.classList.contains("menu-open"))}
+    var m=e.target.closest(".menu-btn");if(m){document.body.classList.toggle("menu-open");var o=document.body.classList.contains("menu-open");m.setAttribute("aria-expanded",o);m.textContent=o?"✕":"☰";m.setAttribute("aria-label",o?"Close menu":"Open menu")}
   });
   var SY=window.SCHOOL_YEAR;
   // dates on lesson lists and lesson pages
